@@ -3,12 +3,13 @@
   "level_display": "tconstruct:default",
   "modules": [
     {
-      "type": "tconstruct:max_armor_stat",
+      "type": "tconstruct:max_armor_attribute",
       "allow_broken": false,
+      "attribute": "minecraft:generic.knockback_resistance",
       "each_level": 0.05,
       "held_tag": "tconstruct:modifiable/held",
-      "key": "tconstruct:use_item_speed",
-      "tooltip_style": "percent"
+      "operation": "addition",
+      "unique": "tconstruct.modifier.projectile_protection"
     },
     {
       "type": "tconstruct:protection",
@@ -16,7 +17,7 @@
         "type": "mantle:and",
         "predicates": [
           "mantle:can_protect",
-          "mantle:melee"
+          "mantle:projectile"
         ]
       },
       "each_level": 2.5
