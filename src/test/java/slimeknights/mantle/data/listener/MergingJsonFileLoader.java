@@ -3,7 +3,7 @@ package slimeknights.mantle.data.listener;
 import com.google.gson.JsonElement;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.packs.resources.ResourceManager;
-import slimeknights.tconstruct.test.JsonFileLoader;
+import net.ryancave282.tconstruct.test.JsonFileLoader;
 
 import javax.annotation.Nullable;
 import java.util.HashMap;
