@@ -12,10 +12,10 @@ group = mod_group_id
 
 repositories {
     mavenCentral()
-    maven { // Mantle
-        name 'DVS1 Maven FS'
-        url 'https://dvs1.progwml6.com/files/maven'
-    }
+//    maven { // Mantle
+//        name 'DVS1 Maven FS'
+//        url 'https://dvs1.progwml6.com/files/maven'
+//    }
     maven { // TOP
         name 'tterrag maven'
         url "https://maven.tterrag.com/"
@@ -34,6 +34,12 @@ repositories {
             includeGroup "curse.maven"
         }
     }
+
+    mavenLocal()
+    maven {
+        url "file//C:/Users/ryanc/Documents/Development/Minecraft/Mantle/"
+    }
+
     // If you have mod jar dependencies in ./libs, you can declare them as a repository like so:
     flatDir {
         dir '../Mantle/build/libs'
